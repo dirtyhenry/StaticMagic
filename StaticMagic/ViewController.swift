@@ -8,11 +8,13 @@
 import Cocoa
 
 class ViewController: NSViewController {
+    @IBOutlet var editor: NSTextView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        editor.allowsUndo = true
     }
 
     override var representedObject: Any? {
